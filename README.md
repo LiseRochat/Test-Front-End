@@ -65,7 +65,7 @@ git clone https://github.com/LiseRochat/Test-Front-End
     - [x] Tablet
     - [x] Mobile
 - [x] Javascript
-
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Contributing
 If you have a suggestion that would make this better, please fork the repository and create a pull request. You can also simply open an issue with the tag "enhancement".
