@@ -1,0 +1,21 @@
+.slider {
+    width:400px;
+    margin-left:10px;
+}
+
+.slick-next{
+    right:15px;
+}
+.slick-prev {
+    left:-15px;
+}
+.slick-prev:before
+{
+    content: '\0025C4';
+    color:#000;
+}
+.slick-next:before
+{
+    content: '\0025BA';
+    color:#000;
+}

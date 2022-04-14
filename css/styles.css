@@ -1,0 +1,244 @@
+/* HEADER */
+header{
+    background-image: url(../images/background-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color:#FFF;
+    height:500px;
+}
+header #monMenu{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+    width:100%;
+ }
+header #monTitre p, header #monTitre h1{
+    text-align: center;
+}
+header #monTitre{
+    flex: 1;
+}
+header #barDeRecherche form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;   
+}
+header #barDeRecherche form #formulaire{
+    display: flex;
+    background-color: rgb(255, 255, 255,0.5);
+    padding:2px 50px;
+    margin:0;
+    margin-bottom: 10px;
+}
+header #barDeRecherche form #choix{
+    background-color: rgb(255, 255, 255,);
+    border:none;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+header #barDeRecherche form #formulaire input{
+    background-color: rgb(255, 255, 255,);
+    border:none;
+    border-radius: 5px;
+    margin: 5px;
+    padding:5px;
+}
+header #barDeRecherche form #bouttonValidation {
+    background-color: rgba(66, 255, 8, 0.5);
+    padding:2px 50px;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+header #barDeRecherche form #bouttonValidation button{
+    border:none;
+    background-color:rgba(66, 255, 8, 0);
+    color: #FFF;
+    margin: 5px;
+    padding:5px;
+}
+/* Menu hamburger */
+header nav{
+    position:relative;
+    margin-bottom:0.5rem;
+}
+header nav button {
+    bottom:0;
+    width: 100%;
+    margin-right: 5px;
+}
+
+header nav ul{
+    display:none;
+    position:absolute;
+    margin-right: 35px;;
+    right: -30px;
+    background:#fff;
+    /* Jaurais bien aimer lui donner la largeur de ma page.. */
+    width: 200vh;
+}
+header nav ul li {
+    padding:0.5rem;
+    white-space:nowrap;
+}
+a:hover{
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+/* FIN menu hamburger */
+/* FIN HEADER */
+
+/* MAIN */
+main #voiture{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#enTete{
+    margin:10px 50px;
+    padding:0px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.resultat{
+    font-size: 1.5rem;
+}
+#categorie{
+    background: rgb(199,199,199);
+    background: linear-gradient(0deg, rgba(199,199,199,1) 35%, rgba(255,255,255,1) 100%);
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* ARTICLE */
+article{
+    display:flex;
+    flex-direction: row;
+    margin-top:10px;
+    margin-bottom: 5rem;
+}
+.texte{
+    margin-left:50px;
+    line-height: 2rem;
+}
+.texte button{
+    color: #FFF;
+    background: rgb(27,135,29);
+    background: linear-gradient(0deg, rgba(27,135,29,1) 2%, rgba(0,251,29,1) 100%);
+    border-radius: 5px;
+    padding:5px;
+    border-color:rgb(124, 187, 60) ;
+    box-shadow: none;
+}
+/* FIN ARTICLE */
+/* FIN MAIN */
+
+/* FOOTER */
+footer{
+    margin-top:3rem;
+    margin-bottom: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+footer img{
+    width:200px;
+    height: 150px;
+    margin-right: 50px;
+}
+footer p, footer address{
+    line-height: 1em;
+}
+footer strong{
+    font-weight: bold;
+}
+/* FIN FOOTER */
+
+/* Pour smarthphone */
+@media screen and (max-width:767px) {
+    header #barDeRecherche form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    header #barDeRecherche form #formulaire{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header #barDeRecherche form #formulaire{
+        margin:0;
+        width: 400px;
+        margin-top:70px;
+    }
+    header #barDeRecherche form #bouttonValidation {
+        margin:0;
+        width: 400px;
+    }
+    
+    .texte p, .texte h2{
+        display:none
+    }
+    .texte button{
+        margin-top: 3rem;
+        margin-left: 0rem;
+    }
+    header nav ul{
+        width: 95vh;
+    }
+    #barDeRecherche{
+        margin-top:150px;
+    }
+}
+
+/* Pour tablette */
+@media only screen and (min-width:768px) 
+and (max-width:1024px){
+    header #barDeRecherche form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    header #barDeRecherche form #formulaire{
+        display: flex;
+    }
+    
+    header #barDeRecherche form #formulaire{
+        margin:0;
+        width: 768px;
+    }
+    header #barDeRecherche form #bouttonValidation {
+        margin:0;
+        width: 768px;
+        text-align: center;
+    }
+    
+    .texte p, .texte h2{
+        display:none
+    }
+    .texte button{
+        margin-top: 3rem;
+        margin-left: 3rem;
+    }
+    header nav ul{
+        width: 180vh;
+    }
+}

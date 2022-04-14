@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FEUILLES DE STYLES CSS-->
+    <link rel="stylesheet" href="css/resetStyle.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/slider.css">
+    <!--MA FEUILLE DE STYLE-->
+    <link href="./css/styles.css" rel="stylesheet" type="text/css">
+    <!--FIN FEUILLES DE STYLES CSS-->
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="page">
+        <!--DEBUT HEADER-->
+        <header>
+            <div id="monMenu">
+                <div id="monTitre">
+                    <h1>Bienvenue à bord</h1>
+                    <p>Location de voiture 24h/24 et 7j/7</p>
+                </div><!--FIN div monTitre-->
+                
+                <!--HAMBURGER MENU-->
+                <div id="topnav" class="topnav">
+                    <nav id="topnavMenu">
+                        <button><img src="images/hamburger-off.png" alt="hamburger-off"></button>
+                        <ul>
+                            <li><a href="#">Louer une voiture</a></li>
+                            <li><a href="#">louer un utilitaire</a></li>
+                            <li><a href="#">Réserver un chauffeur</a></li>
+                            <li><a href="#">Découvrez nos agences</a></li>
+                            <li><a href="#">Mon Compte</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div><!--FIN div topnav-->
+                <!--FIN HAMBURGER MENU-->
+
+            </div><!--FIN div monMenu-->
+            
+            <div id="barDeRecherche">
+                <form method="post" action="ton_action">
+                    <div id="formulaire">
+                        <select id="choix" name="le_nom">
+                            <option value="ta_valeur">Adresse de départ</option>
+                            <option value="ta_valeur">Lyon</option>
+                            <option value="ta_valeur">Paris</option>
+                        </select>
+                        <input type="date" name="trip-start" value="2021-10-15" min="2021-10-15">
+                        <input type="date" value="2021-12-15" name="trip-start" min="2021-10-16" required>
+                    </div><!--FIN div formulaire-->
+                    <div id="bouttonValidation">
+                        <button>Valider ma recherche</button>
+                    </div><!--FIN div boutton valider ma recherhce-->
+                </form>
+
+            </div><!--FIN div barre de recherche-->
+        </header>
+        <!--FIN HEADER-->
+
+        <!--MAIN-->
+        <main>
+            <div id="enTete">
+                <p class="resultat">7 résultats</p>
+                <form method="post" action="ton_action">
+                    <p>
+                        <select id="categorie" name="le_nom">
+                            <option value="ta_valeur">Prix croissant</option>
+                            <option value="ta_valeur">Prix décroissant</option>
+                            <option value="ta_valeur">Populaire</option>
+                        </select>
+                    </p>
+                </form><!--FIN Formulaire-->
+            </div><!--FIN div enTete-->
+
+            <!-- CORPS DE PAGE -->
+            <div id="voiture">
+                <!--Article PEUGEOT-->
+                <article>
+                    <!--SLIDER-->
+                    <div class="slider">
+                        <div><img src="images/vehicule1.png" alt="vehicule1"></div>
+                        <div><img src="images/vehicule2.png" alt="vehicule2"></div>
+                        <div><img src="images/vehicule3.png" alt="vehicule3"></div>
+                        <div><img src="images/vehicule4.png" alt="vehicule4"></div>
+                    </div><!--FIN SLIDER-->
+                    
+                    <div class="texte">
+                        <h2>Peugeot 208</h2>
+                        <p>Diesel 5 portes, GPS, AutoRadio, Forfait 1000 km (O.5/km supplémentaire). <br>999euros -
+                            Agence de
+                            Paris</p>
+                        <button>Reserver et payer</button>
+                    </div><!--Fin div texte-->
+                </article><!--FIN Article PEUGEOT-->
+                
+                <!--Article Ford Focus-->
+                <article>
+                    <!--SLIDER-->
+                    <div class="slider">
+                        <div><img src="images/vehicule1.png" alt="vehicule1"></div>
+                        <div><img src="images/vehicule2.png" alt="vehicule2"></div>
+                        <div><img src="images/vehicule3.png" alt="vehicule3"></div>
+                        <div><img src="images/vehicule4.png" alt="vehicule4"></div>
+                    </div><!--FIN SLIDER-->
+                    
+                    <div class="texte">
+                        <h2>Ford Focus-</h2>
+                        <p>Diesel 5 portes, GPS, AutoRadio, Forfait 1000 km (O.5/km supplémentaire). <br>999euros</p>
+                        <button>Reserver et payer</button>
+                    </div><!--Fin div texte-->
+                </article><!--FIN Article-->
+                
+                <!--Article Audi A1-->
+                <article>
+                    <!--SLIDER-->
+                    <div class="slider">
+                        <div><img src="images/vehicule1.png" alt="vehicule1"></div>
+                        <div><img src="images/vehicule2.png" alt="vehicule2"></div>
+                        <div><img src="images/vehicule3.png" alt="vehicule3"></div>
+                        <div><img src="images/vehicule4.png" alt="vehicule4"></div>
+                    </div><!--FIN SLIDER-->
+    
+                    <div class="texte">
+                        <h2>Audi A1</h2>
+                        <p>Diesel 5 portes, GPS, AutoRadio, Forfait 1000 km (O.5/km supplémentaire). <br>999euros -
+                            Agence de
+                            Paris</p>
+                        <button>Reserver et payer</button>
+                    </div><!--Fin div texte-->
+                </article><!--FIN Article Audi A1-->
+                
+                <!--Article Opel Mokla-->
+                <article>
+                    <!--SLIDER-->
+                    <div class="slider">
+                        <div><img src="images/vehicule4.png" alt="vehicule4"></div>
+                        <div><img src="images/vehicule1.png" alt="vehicule1"></div>
+                        <div><img src="images/vehicule2.png" alt="vehicule2"></div>
+                        <div><img src="images/vehicule3.png" alt="vehicule3"></div>
+                    </div><!--FIN SLIDER-->
+
+                    <div class="texte">
+                        <h2>Opel Mokla</h2>
+                        <p>Diesel 5 portes, GPS, AutoRadio, Forfait 1000 km (O.5/km supplémentaire). <br>999euros -
+                            Agence de
+                            Paris</p>
+                        <button>Reserver et payer</button>
+                    </div><!--Fin div texte-->
+                </article><!--FIN Article Opel Mokla-->
+                
+            </div><!--FIN div voiture-->
+
+        </main>
+        <!-- FIN MAIN -->
+
+        <!-- FOOTER -->
+        <footer>
+            <img src="images/agence.jpg" alt="agence">
+            <div>
+                <p>Notre Agence de <strong>Paris</strong>
+                <address>300 boulevard de vaugirard, 75015, Paris</address>
+                <p> Ouvert 7j/7 de 09h à 13h et de 14h à 20h</p>
+                <p> 01 49 78 21 33 </p>
+                <p>contact@vtc.com </p>
+            </div>
+        </footer>
+        <!-- FIN FOOTER -->
+    </div><!--FIN div page-->
+    
+
+    <!--JAVASCRIPT-->
+    <script src="javascript/jquery-3.6.0.min.js"></script>
+    <script src="javascript/slick.min.js"></script>
+    <script src="javascript/menuHamburger.js"></script>
+    <script src="javascript/carrouselImage.js"></script>
+    <script src="javascript/slider.js"></script>
+    <!--FIN JAVASCRIPT-->
+
+</body>
+
+</html>
